@@ -23,7 +23,6 @@ namespace WindowsFormsApp2
         {   
             InitializeComponent();
             ////var Form2 = new Form2();
-            var sql = new sqllite_class();
          
             if (Form2.user_name != "") {
                 nameTextBox.Text = Form2.user_name;

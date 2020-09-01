@@ -107,6 +107,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="database.cs" />
     <Compile Include="fileUploadResponse.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -129,7 +130,6 @@
     <Compile Include="settings_form.Designer.cs">
       <DependentUpon>settings_form.cs</DependentUpon>
     </Compile>
-    <Compile Include="sqllite_class.cs" />
     <Compile Include="upload_to_server.cs" />
     <Compile Include="UserData.cs" />
     <EmbeddedResource Include="Form1.resx">

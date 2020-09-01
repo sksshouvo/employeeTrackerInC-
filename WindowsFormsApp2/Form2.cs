@@ -12,6 +12,7 @@ using RestSharp;
 using Newtonsoft.Json;
 using WindowsFormsApp2;
 using System.Security.Cryptography;
+using System.Data.SQLite;
 namespace employee_tracker
 {
     public partial class Form2 : Form
@@ -94,12 +95,20 @@ namespace employee_tracker
 
         private void Form2_Load(object sender, EventArgs e)
         {
+         
+        }
 
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (remember_me_checkbox.Checked) {
+                
+            }
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+            
             email = emailTextBox.Text;
 
             password = MD5Hash(passwordTextBox.Text);
@@ -144,6 +153,12 @@ namespace employee_tracker
                         user_name = jsonData.user_data.name;
                         _tokens = jsonData.user_data._tokens;
                         login_email = jsonData.user_data.email;
+
+                        //insert data into remember_users
+                        //string query = "INSERT INTO remember_users (`email`, `_tokens`) VALUES (@email, @tokens)";
+                        //SQLiteCommand myCommand = new SQLiteCommand();
+                        //myCommand.Parameters.AddWithValue("@email", login_email);
+                        //myCommand.Parameters.AddWithValue("")
                         MessageBox.Show("Logged In Successfully");
                         this.Hide();
                         var Form1 = new Form1();

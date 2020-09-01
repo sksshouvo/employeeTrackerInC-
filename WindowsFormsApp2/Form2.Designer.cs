@@ -38,6 +38,7 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.remember_me_checkbox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -56,7 +57,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 8F);
-            this.label2.Location = new System.Drawing.Point(17, 49);
+            this.label2.Location = new System.Drawing.Point(17, 45);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 14);
             this.label2.TabIndex = 1;
@@ -67,7 +68,7 @@
             // 
             this.emailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.emailTextBox.Font = new System.Drawing.Font("Arial", 10F);
-            this.emailTextBox.Location = new System.Drawing.Point(17, 72);
+            this.emailTextBox.Location = new System.Drawing.Point(17, 65);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(179, 23);
             this.emailTextBox.TabIndex = 2;
@@ -75,8 +76,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial", 8F);
-            this.label3.Location = new System.Drawing.Point(17, 113);
+            this.label3.Location = new System.Drawing.Point(15, 102);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 14);
             this.label3.TabIndex = 3;
@@ -86,7 +88,7 @@
             // 
             this.passwordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.passwordTextBox.Font = new System.Drawing.Font("Arial", 10F);
-            this.passwordTextBox.Location = new System.Drawing.Point(17, 135);
+            this.passwordTextBox.Location = new System.Drawing.Point(17, 124);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.Size = new System.Drawing.Size(179, 23);
             this.passwordTextBox.TabIndex = 4;
@@ -96,7 +98,7 @@
             this.button1.BackColor = System.Drawing.Color.SkyBlue;
             this.button1.Font = new System.Drawing.Font("Arial", 8F);
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(17, 170);
+            this.button1.Location = new System.Drawing.Point(17, 173);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 30);
             this.button1.TabIndex = 5;
@@ -107,8 +109,9 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.Font = new System.Drawing.Font("Arial", 7F);
-            this.linkLabel1.Location = new System.Drawing.Point(107, 113);
+            this.linkLabel1.Location = new System.Drawing.Point(107, 102);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(89, 13);
             this.linkLabel1.TabIndex = 6;
@@ -140,6 +143,19 @@
             this.linkLabel2.Text = "Sign Up";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
+            // remember_me_checkbox
+            // 
+            this.remember_me_checkbox.AutoSize = true;
+            this.remember_me_checkbox.BackColor = System.Drawing.Color.Transparent;
+            this.remember_me_checkbox.Font = new System.Drawing.Font("Arial", 8F);
+            this.remember_me_checkbox.Location = new System.Drawing.Point(21, 152);
+            this.remember_me_checkbox.Name = "remember_me_checkbox";
+            this.remember_me_checkbox.Size = new System.Drawing.Size(94, 18);
+            this.remember_me_checkbox.TabIndex = 9;
+            this.remember_me_checkbox.Text = "Remember Me";
+            this.remember_me_checkbox.UseVisualStyleBackColor = false;
+            this.remember_me_checkbox.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -147,6 +163,7 @@
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(436, 212);
+            this.Controls.Add(this.remember_me_checkbox);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.linkLabel1);
@@ -181,5 +198,6 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.CheckBox remember_me_checkbox;
     }
 }

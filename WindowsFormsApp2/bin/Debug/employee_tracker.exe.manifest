@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="employee_tracker.exe" size="61952">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="employee_tracker.exe" size="62976">
       <assemblyIdentity name="employee_tracker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>l/y3q1LbPkxlpmo7ZsLxAX1BRua80fXpuduSTvbNLlM=</dsig:DigestValue>
+        <dsig:DigestValue>O37ZL78cl1bTpodR/GauedAc6uOWNF0iEnfo8JFVvhY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
